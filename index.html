@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islands For Sale</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <!-- Brand -->
+    <!-- <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a> -->
+
+    <button style="margin-left:auto;margin-right:auto;" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#as">Asia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ca">Canada</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#eu">Europe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#us">Central America</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:7087270873"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" width="15" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            +91 70872 70873</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://wa.me/917087270873/?text=urlencodedtext"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+            </svg>
+            +91 70872 70873</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:technology@figgital.com"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" width="15" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            technology@figgital.com</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <h1 class="heading">Buy Your Own Island</h1>
+
+  <div class="container">
+    <h2 id="as">ASIA PACIFIC</h2>
+
+    <div class="row">
+      <div id="1" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: AS01 (Developed)</p>
+        <img src="images/1.jpg" alt="">
+        <p class="location">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+
+
+          Indonesia
+        </p>
+        <p class="price">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+
+          Upon Request
+        </p>
+      </div>
+
+      <div id="2" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: AS02 (Developed)</p>
+        <img src="images/2.jpeg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Thailand</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> Upon Request</p>
+      </div>
+
+
+      <div id="3" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: AS03 (Non Developed)</p>
+        <img src="images/3.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Philippines (58 Acres)</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 650,000.00</p>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+
+      <div id="4" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: AS04 (Non Developed)</p>
+        <img src="images/4.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Maldives</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> Upon Request</p>
+      </div>
+
+
+      <div id="5" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: AS05 (Developed)</p>
+        <img src="images/5.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Maldives</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> Upon Request</p>
+      </div>
+
+
+      <div id="6" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: AS06 (Non Developed)</p>
+        <img src="images/6.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Philippines (0.32 Acres)</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 450,000.00</p>
+      </div>
+
+    </div>
+
+
+    <h2 id="ca">CANADA</h2>
+    <div class="row">
+
+      <div id="7" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: CA07 (Developed)</p>
+        <img src="images/7.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Quebec (0.5 Acres)</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 528,944.38</p>
+      </div>
+
+      <div id="8" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: CA08 (Non Developed)</p>
+        <img src="images/8.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Nova Scotia (12 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 215,000.00</p>
+      </div>
+
+      <div id="9" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: CA09 (Non Developed)</p>
+        <img src="images/9.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Ontario (0.75 Acres)</p>
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 109,648.13</p>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="row">
+
+      <div id="10" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: CA10 (Non Developed)</p>
+        <img src="images/10.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Prince Edward (11 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 110,000.00</p>
+      </div>
+
+      <div id="11" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: CA11 (Non Developed)</p>
+        <img src="images/11.png" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Quebec (5 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 139,000.00</p>
+      </div>
+
+      <div id="12" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: CA12 (Partially Developed)</p>
+        <img src="images/12.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Nova Scotia (26 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 166,477.49</p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <h2 id="eu">EUROPE</h2>
+    <div class="row">
+
+      <div id="13" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: EU13 (Non Developed)</p>
+        <img src="images/13.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Ireland (4 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> £ 230,000(Pound Sterling)</p>
+      </div>
+
+      <div id="14" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: EU14 (Developed)</p>
+        <img src="images/14.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Ireland</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 502,008.03</p>
+      </div>
+
+      <div id="15" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: EU15 (Partially Developed)</p>
+        <img src="images/15.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Ireland (30 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 920,348.06</p>
+      </div>
+    </div>
+
+
+
+
+
+    <h2 id="us">Central America</h2>
+    <div class="row">
+
+      <div id="16" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: US16 (Non Developed)</p>
+        <img src="images/16.jpeg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Belize (0.17 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 34,000.00</p>
+      </div>
+
+      <div id="17" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: US17 (Non Developed)</p>
+        <img src="images/17.png" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Belize (60 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 83,000.00</p>
+      </div>
+
+      <div id="18" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: US18 (Non Developed)</p>
+        <img src="images/18.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Nicaragua (1 Acre)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 90,000.00</p>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+
+      <div id="19" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: US19 (Non Developed)</p>
+        <img src="images/19.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Belize (10 Acres)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 150,000.00</p>
+      </div>
+
+      <div id="20" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: US20 (Non Developed)</p>
+        <img src="images/20.jpg" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Belize (1.07 Acre)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 155,000.00</p>
+      </div>
+
+      <div id="21" class="col-sm-12 col-lg-4 individual-island">
+        <p class="id-number">ID: US21 (Non Developed)</p>
+        <img src="images/21.png" alt="">
+        <p class="location"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg> Belize (0.98 Acre)</p>
+
+        <p class="price"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> USD 215,000.00</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <div class="footer">
+    <!-- <img src="images/logo.png" alt=""> -->
+
+    <p>Contact us</p>
+
+    <div class="contact-info">
+      <a href="tel:7087270873"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="15"
+          stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+        </svg>
+        +91 70872 70873</a>
+      <a href="mailto:technology@figgital.com"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          width="15" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+        </svg>
+        technology@figgital.com</a>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
